@@ -70,34 +70,55 @@
     }
 }
 
-/* Estilos para telas grandes (largura maior ou igual a 1008px) */
-@media screen and (min-width: 1008px) {
-
  /* Estilos para telas grandes (largura maior ou igual a 1008px) */
 @media screen and (min-width: 1008px) {
 
-    .navbar {
+    body {
+        margin: 0; /* Remover a margem padrão do body */
+    }
+
+    header {
+        display: flex;
+        flex-direction: column; /* Alterar a direção do flex para coluna */
+        align-items: center; /* Centralizar os itens na direção da coluna */
+        width: 100vw; /* Definir largura total da tela */
+        background-color: #4d4d4d; /* Definir cor de fundo */
+        padding: 20px 0; /* Adicionar padding superior e inferior */
+    }
+
+    .nome-empresa {
+        font-size: 24px;
+        margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+    }
+
+    header img {
         width: 100%;
-        max-width: 1200px;
-       
+        max-width: 600px;
+        margin: 20px auto; /* Centralizar a imagem na direção da coluna */
+    }
+
+    .navbar {
+        width: 100vw; /* Definir largura total da tela */
+        padding: 20px 0; /* Adicionar padding superior e inferior */
+        margin: 0; /* Remover margem */
     }
 
     .navbar-menu {
-        display: flex; /* Alterar para um layout flexível */
-        justify-content: flex-end; /* Alinhar os itens à direita */
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
     }
 
     .navbar-menu ul {
-        display: flex; /* Alterar para um layout flexível */
-        list-style-type: none; /* Remover os marcadores de lista */
+        display: flex;
     }
 
     .navbar-menu ul li {
-        margin-left: 20px; /* Adicionar margem entre os itens */
+        margin-left: 20px;
     }
 
     .navbar-toggle {
-        display: none; /* Ocultar o botão do menu hamburguer */
+        display: none;
     }
 
     .container-conserto div {
@@ -112,7 +133,10 @@
     }
 
     #contato {
-        width: 100%;
+        width: 100vw; /* Definir largura total da tela */
+        
+        padding: 20px 0; /* Adicionar padding superior e inferior */
+        margin: 0; /* Remover margem */
     }
 
     /* Aumenta o tamanho das letras */
@@ -123,5 +147,4 @@
     .servicos-subtitulo-microondas {
         font-size: 1.8em;
     }
-}
 }
