@@ -1,0 +1,127 @@
+/* Estilos responsivos */
+
+
+@media screen and (max-width: 640px) {
+    .container-conserto div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; /* Define a largura das divs para ocupar 80% da largura da tela */
+        float: none; /* Remove o float para centralizar as divs */
+    }
+
+    .imagem-brastemp,
+    .imagem-microondas,
+    .imagem-lavaeseca {
+        float: none; /* Remove o float para centralizar as imagens */
+        margin: 0 auto; /* Centraliza as imagens */
+        width: 100%; /* Faz as imagens ocuparem toda a largura da div pai */
+    }
+}
+
+/* Estilos para telas de tamanho médio (entre 641px e 1007px) */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    
+    .navbar {
+        width: 100%;
+        max-width: 1200px;
+        
+    }
+
+    .navbar-menu {
+        display: flex; /* Alterar para um layout flexível */
+        justify-content: flex-end; /* Alinhar os itens à direita */
+    }
+
+    .navbar-menu ul {
+        display: flex; /* Alterar para um layout flexível */
+        list-style-type: none; /* Remover os marcadores de lista */
+    }
+
+    .navbar-menu ul li {
+        margin-left: 20px; /* Adicionar margem entre os itens */
+    }
+
+    .navbar-toggle {
+        display: none; /* Ocultar o botão do menu hamburguer */
+    }
+
+    .container-conserto div {
+        margin-bottom: 60px;
+    }
+
+    .imagem-brastemp,
+    .imagem-lavaeseca,
+    .imagem-microondas {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    #contato {
+        max-width: 1000px;
+    }
+
+    /* Aumenta o tamanho das letras */
+    .container-limpeza-profunda,
+    .subtitulo-limpeza-profunda,
+    .servicos-subtitulo-maquina,
+    .servicos-subtitulo-lavaeseca,
+    .servicos-subtitulo-microondas {
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para telas grandes (largura maior ou igual a 1008px) */
+@media screen and (min-width: 1008px) {
+
+ /* Estilos para telas grandes (largura maior ou igual a 1008px) */
+@media screen and (min-width: 1008px) {
+
+    .navbar {
+        width: 100%;
+        max-width: 1200px;
+       
+    }
+
+    .navbar-menu {
+        display: flex; /* Alterar para um layout flexível */
+        justify-content: flex-end; /* Alinhar os itens à direita */
+    }
+
+    .navbar-menu ul {
+        display: flex; /* Alterar para um layout flexível */
+        list-style-type: none; /* Remover os marcadores de lista */
+    }
+
+    .navbar-menu ul li {
+        margin-left: 20px; /* Adicionar margem entre os itens */
+    }
+
+    .navbar-toggle {
+        display: none; /* Ocultar o botão do menu hamburguer */
+    }
+
+    .container-conserto div {
+        margin-bottom: 60px;
+    }
+
+    .imagem-brastemp,
+    .imagem-lavaeseca,
+    .imagem-microondas {
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    #contato {
+        width: 100%;
+    }
+
+    /* Aumenta o tamanho das letras */
+    .container-limpeza-profunda,
+    .subtitulo-limpeza-profunda,
+    .servicos-subtitulo-maquina,
+    .servicos-subtitulo-lavaeseca,
+    .servicos-subtitulo-microondas {
+        font-size: 1.8em;
+    }
+}
+}

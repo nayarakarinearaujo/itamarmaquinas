@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --cor-texto: #ffffff;
+    --cor-subtitulo: #2f4f4f;
+    --black-cor: #000000;
+    --cor-secundária: #4f6a6a;
+    --cor-terciaria: #6a8181;
+    --cor-extremidade: #333;
+  }
+
+/* Estilos gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; 
+    text-align: center; 
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--cor-extremidade);
+    padding: 20px;
+}
+
+.navbar-header {
+    float: left;
+}
+
+.navbar .nav-link {
+    color: var(--cor-texto);
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+}
+
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-toggle span {
+    background:var(--black-cor);
+    height: 3px;
+    width: 25px;
+    display: block;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu {
+    display: none;
+    margin-right: 10px;
+}
+
+.navbar-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu ul li {
+    display: block; 
+    margin-left: 30px;
+    vertical-align: middle;
+    transition: color 0.3s ease; /* Define a transição para a cor do texto */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    text-align: left;
+    display: block;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #4d4d4d;
+    margin: 0;
+    padding: 20px 0;
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+.nome-empresa {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    animation: pulse 1.5s infinite alternate; /* Animação */
+margin-top: 20px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+header img {
+    width: 70%;
+    height: auto;
+    margin: 0 auto
+}
+
+
+/* Estilos da seção 'Sobre' */
+.sobre-texto {
+    line-height: 1.2;
+}
+
+.titulo {
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/*Conaitner serviços*/
+
+.container {
+    margin: 0 auto; 
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container-limpeza li,
+.serviços-container-vendas li {
+    text-align: left;
+    padding-left: 20px;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.higienizacao {
+    display: flex; 
+    align-items: center; 
+}
+
+.higienizacao p {
+    flex: 1; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.imagem-higienizacao {
+    width: 50%;
+    margin-left: 20px; 
+}
+
+/*Container Limpeza profunda*/
+
+.container-limpeza-profunda {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+    text-align: left;
+}
+
+.subtitulo-limpeza-profunda{
+    color:var(--cor-texto) ;
+    background-color: var(--cor-subtitulo);
+    text-align: center;
+     
+}
+
+.higienizacao p {
+    font-size: 20px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+}
+
+.limpeza-profunda-texto {
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+
+.container-limpeza-profunda ul,
+.container-limpeza-profunda li {
+    margin-left: 20px;
+}
+
+
+/*Container conserto*/
+
+
+#servicos h3{
+    background-color: var(--cor-subtitulo);
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+.servicos-subtitulo {
+color: var(--cor-subtitulo);
+text-align: center;
+}
+
+.imagem-conserto {
+    margin-left: 20px;
+}
+
+.container-conserto {
+    margin: 5%;
+    margin-bottom: 20px;
+}
+
+.servicos-subtitulo-maquina{
+    text-align: right; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+
+
+.container-conserto div {
+    clear: both;
+    margin-bottom: 40px;
+}
+
+
+.micro-ondas li,
+.lavaeseca li,
+.maquinadelavar li {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-right: 30px;
+}
+
+
+.container-maquina p,
+.container-lavaeseca p,
+.container-microondas p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+
+/* Estilos para o título "Nossos Produtos em Destaque" */
+.serviços-container-vendas h2, .servicos-subtitulo {
+    color: var(--cor-extremidade); 
+    background-color: var(--cor-texto); 
+    padding: 20px; 
+    text-align: center; 
+    margin-top: 40px; 
+    margin-bottom: 20px; 
+    font-size: 1.5em; 
+    font-weight: bold;
+}
+
+h3 {
+    color: var(--cor-subtitulo); 
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    font-size: 1.5em; 
+    font-weight: bold; /* Negrito */
+    
+}
+
+.container-limpeza p {
+    text-align: left;
+}
+
+/*Container Micro-ondas*/
+
+.container-microondas {
+    margin-bottom: 40px;
+}
+
+.servicos-subtitulo-microondas {
+    background-color: var(--cor-subtitulo);
+    color: var(--cor-texto);
+    text-align: right; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+}
+
+.micro-ondas {
+    text-align: center; 
+    list-style-position: inside;
+}
+
+
+/*Imagens*/
+
+.imagem-lavaeseca {
+    width: 60%;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.imagem-brastemp,
+.imagem-microondas {
+    width: 60%;
+    height: auto;
+    float: right;
+    margin-right: 40px;
+}
+
+
+/*Container Benefícios*/
+
+#beneficios {
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-texto);
+    margin-top: 80px; 
+}
+
+#beneficios h2 {
+    padding: 20px;
+}
+
+#beneficios ul {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 80px;
+}
+
+#beneficios ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    
+}
+
+#beneficios .beneficios-texto {
+    line-height: 1.2;
+}
+
+#beneficios .subtitulo-beneficios {
+    color: var(--cor-texto);
+    background-color: var(--cor-subtitulo);
+    text-align: center;
+}
+
+/*Container vendas*/
+
+.serviços-container-vendas h2, p {
+    padding: 20px;
+}
+
+
+/*Container Contato*/
+
+#contato {
+    text-align: center;
+    max-width: 100%; 
+    padding: 50px 20px;
+    background-color: var(--cor-subtitulo);
+    color: var(--cor-texto);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+    margin: 0;
+    position: relative;
+}
+
+#titulo{
+    margin-bottom: 20px;
+}
+
+#contatoForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#contatoForm input[type="text"],
+#contatoForm input[type="tel"],
+#contatoForm input[type="email"],
+#contatoForm textarea {
+    width: calc(95% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contatoForm input[type="text"]:hover,
+#contatoForm input[type="email"]:hover,
+#contatoForm input[type="tel"]:hover,
+#contatoForm textarea:hover {
+    border-color: var(--cor-subtitulo);
+    box-shadow: 0 0 5px var(--cor-subtitulo);
+    background-color: #b5c1c0;
+}
+
+#contatoForm input[type="text"]:focus,
+#contatoForm input[type="email"]:focus,
+#contatoForm input[type="tel"]:focus,
+#contatoForm textarea:focus {
+    outline: none;
+    
+}
+
+#contatoForm button[type="submit"] {
+    width: calc(50% - 20px);
+    padding: 10px;
+    background-color: var(--cor-secundária);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+#contatoForm button[type="submit"]:hover {
+    background-color: #a4b2b2;
+}
+
+
+/*Footer*/
+
+.footer {
+    text-align: center;
+    width: 100%; 
+    background-color: var(--cor-extremidade);
+    color: var(--cor-texto);
+    font-size: 14px;
+    padding: 20px 0; 
+    justify-content: center;
+}
+
+
+.rodape {
+    text-align: center;
+    width: 100%;
+    background-color:var(--cor-extremidade);
+    color: var(--cor-texto);
+    font-size: 14px;
+    padding: 5px 0px; 
+}
+
+.rodape div, p {
+    text-align: center;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+
+.rodape div img {
+    margin-bottom: -10px;
+}
+
+
