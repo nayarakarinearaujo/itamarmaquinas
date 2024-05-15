@@ -23,8 +23,7 @@ body {
 .navbar {
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to bottom, #4d4d4d, #2f4f4f, #4f6a6a, #6a8181, #2f4f4f, #4d4d4d);
-    /* Outros estilos conforme necessário */
+    background-color: var(--cor-extremidade);
 }
 
 .navbar-header {
