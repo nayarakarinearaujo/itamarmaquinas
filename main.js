@@ -42,3 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+
+    // Função para alternar a visibilidade do menu quando o botão do hambúrguer é clicado
+    menuToggle.addEventListener('click', function() {
+        navbarMenu.classList.toggle('active');
+    });
+});

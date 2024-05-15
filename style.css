@@ -60,6 +60,11 @@ body {
     margin-right: 10px;
 }
 
+.navbar-menu.active {
+    display: block;
+}
+
+
 .navbar-menu ul {
     list-style-type: none;
     margin: 0;
