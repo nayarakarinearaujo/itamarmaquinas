@@ -2,28 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  :root {
+}
+
+:root {
     --cor-texto: #ffffff;
     --cor-subtitulo: #2f4f4f;
     --black-cor: #000000;
     --cor-secundária: #4f6a6a;
     --cor-terciaria: #6a8181;
     --cor-extremidade: #333;
-  }
+}
 
 /* Estilos gerais */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden; 
-    text-align: center; 
+    overflow-x: hidden;
+    text-align: center;
 }
 
 .navbar {
     width: 100%;
-    background-color: var(--cor-extremidade);
     padding: 20px;
+    background: linear-gradient(to bottom, #4d4d4d, #2f4f4f, #4f6a6a, #6a8181, #2f4f4f, #4d4d4d);
+    /* Outros estilos conforme necessário */
 }
 
 .navbar-header {
@@ -47,7 +48,7 @@ body {
 }
 
 .navbar-toggle span {
-    background:var(--black-cor);
+    background: var(--black-cor);
     height: 3px;
     width: 25px;
     display: block;
@@ -60,11 +61,6 @@ body {
     margin-right: 10px;
 }
 
-.navbar-menu.active {
-    display: block;
-}
-
-
 .navbar-menu ul {
     list-style-type: none;
     margin: 0;
@@ -72,10 +68,10 @@ body {
 }
 
 .navbar-menu ul li {
-    display: block; 
+    display: block;
     margin-left: 30px;
     vertical-align: middle;
-    transition: color 0.3s ease; /* Define a transição para a cor do texto */
+    transition: color 0.3s ease;
 }
 
 .navbar-menu a {
@@ -85,7 +81,10 @@ body {
     display: block;
     padding: 10px 12px;
     cursor: pointer;
+    font-weight: bold;
 }
+
+/*Header*/
 
 header {
     width: 100%;
@@ -98,31 +97,36 @@ header {
     background-color: #4d4d4d;
     margin: 0;
     padding: 20px 0;
-    margin-left: 0; 
+    margin-left: 0;
     margin-right: 0;
 }
 
+
 .nome-empresa {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
-    animation: pulse 1.5s infinite alternate; /* Animação */
-margin-top: 20px;
+    animation: pulse 1.5s infinite alternate;
+    /* Animação */
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
+    /* Adiciona sombra ao texto */
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* Adicionar bordas arredondadas */
+    background-color: rgba(0, 0, 0, 0.418);
+    /* Adicionar fundo transparente */
+    margin-right: 20px;
 }
 
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(1.05);
     }
 }
-
-header img {
-    width: 70%;
-    height: auto;
-    margin: 0 auto
-}
-
 
 /* Estilos da seção 'Sobre' */
 .sobre-texto {
@@ -140,7 +144,7 @@ header img {
 /*Conaitner serviços*/
 
 .container {
-    margin: 0 auto; 
+    margin: 0 auto;
     overflow-x: hidden;
     position: relative;
 }
@@ -160,19 +164,19 @@ ul li {
 }
 
 .higienizacao {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .higienizacao p {
-    flex: 1; 
+    flex: 1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
 }
 
 .imagem-higienizacao {
     width: 50%;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 /*Container Limpeza profunda*/
@@ -187,11 +191,11 @@ ul li {
     text-align: left;
 }
 
-.subtitulo-limpeza-profunda{
-    color:var(--cor-texto) ;
+.subtitulo-limpeza-profunda {
+    color: var(--cor-texto);
     background-color: var(--cor-subtitulo);
     text-align: center;
-     
+
 }
 
 .higienizacao p {
@@ -215,15 +219,15 @@ ul li {
 /*Container conserto*/
 
 
-#servicos h3{
+#servicos h3 {
     background-color: var(--cor-subtitulo);
     color: var(--cor-texto);
     text-align: center;
 }
 
 .servicos-subtitulo {
-color: var(--cor-subtitulo);
-text-align: center;
+    color: var(--cor-subtitulo);
+    text-align: center;
 }
 
 .imagem-conserto {
@@ -235,10 +239,10 @@ text-align: center;
     margin-bottom: 20px;
 }
 
-.servicos-subtitulo-maquina{
-    text-align: right; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
+.servicos-subtitulo-maquina {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -268,26 +272,28 @@ text-align: center;
 
 
 /* Estilos para o título "Nossos Produtos em Destaque" */
-.serviços-container-vendas h2, .servicos-subtitulo {
-    color: var(--cor-extremidade); 
-    background-color: var(--cor-texto); 
-    padding: 20px; 
-    text-align: center; 
-    margin-top: 40px; 
-    margin-bottom: 20px; 
-    font-size: 1.5em; 
+.serviços-container-vendas h2,
+.servicos-subtitulo {
+    color: var(--cor-extremidade);
+    background-color: var(--cor-texto);
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 h3 {
-    color: var(--cor-subtitulo); 
+    color: var(--cor-subtitulo);
     padding: 20px;
     text-align: center;
-    margin-top: 20px; 
-    margin-bottom: 20px; 
-    font-size: 1.5em; 
-    font-weight: bold; /* Negrito */
-    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* Negrito */
+
 }
 
 .container-limpeza p {
@@ -303,13 +309,13 @@ h3 {
 .servicos-subtitulo-microondas {
     background-color: var(--cor-subtitulo);
     color: var(--cor-texto);
-    text-align: right; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .micro-ondas {
-    text-align: center; 
+    text-align: center;
     list-style-position: inside;
 }
 
@@ -341,7 +347,7 @@ h3 {
     padding: 30px 20px;
     background-color: var(--cor-terciaria);
     color: var(--cor-texto);
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 #beneficios h2 {
@@ -357,7 +363,7 @@ h3 {
 #beneficios ul li {
     margin-bottom: 10px;
     padding-left: 20px;
-    
+
 }
 
 #beneficios .beneficios-texto {
@@ -372,7 +378,8 @@ h3 {
 
 /*Container vendas*/
 
-.serviços-container-vendas h2, p {
+.serviços-container-vendas h2,
+p {
     padding: 20px;
 }
 
@@ -381,7 +388,7 @@ h3 {
 
 #contato {
     text-align: center;
-    max-width: 100%; 
+    max-width: 100%;
     padding: 50px 20px;
     background-color: var(--cor-subtitulo);
     color: var(--cor-texto);
@@ -391,7 +398,7 @@ h3 {
     position: relative;
 }
 
-#titulo{
+#titulo {
     margin-bottom: 20px;
 }
 
@@ -433,7 +440,7 @@ h3 {
 #contatoForm input[type="tel"]:focus,
 #contatoForm textarea:focus {
     outline: none;
-    
+
 }
 
 #contatoForm button[type="submit"] {
@@ -460,11 +467,11 @@ h3 {
 
 .footer {
     text-align: center;
-    width: 100%; 
+    width: 100%;
     background-color: var(--cor-extremidade);
     color: var(--cor-texto);
     font-size: 14px;
-    padding: 20px 0; 
+    padding: 20px 0;
     justify-content: center;
 }
 
@@ -472,13 +479,14 @@ h3 {
 .rodape {
     text-align: center;
     width: 100%;
-    background-color:var(--cor-extremidade);
+    background-color: var(--cor-extremidade);
     color: var(--cor-texto);
     font-size: 14px;
-    padding: 5px 0px; 
+    padding: 5px 0px;
 }
 
-.rodape div, p {
+.rodape div,
+p {
     text-align: center;
 }
 
@@ -491,5 +499,3 @@ h3 {
 .rodape div img {
     margin-bottom: -10px;
 }
-
-
