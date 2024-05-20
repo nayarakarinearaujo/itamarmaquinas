@@ -22,7 +22,7 @@ body {
 
 .navbar {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--cor-extremidade);
 }
 
@@ -93,29 +93,28 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #4d4d4d;
+    background: linear-gradient(to right, #333, #f0f0f0); /* Gradiente da esquerda para a direita começando com #333 */
     margin: 0;
-    padding: 20px 0;
+    padding: 50px 0; /* Reduzindo o preenchimento superior para 50px */
     margin-left: 0;
     margin-right: 0;
+    
 }
 
 
 .nome-empresa {
     animation: pulse 1.5s infinite alternate;
-    /* Animação */
     font-size: 36px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
-    /* Adiciona sombra ao texto */
     margin-top: 20px;
     padding: 10px 20px;
     border-radius: 5px;
-    /* Adicionar bordas arredondadas */
-    background-color: rgba(0, 0, 0, 0.418);
-    /* Adicionar fundo transparente */
-    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-right: 15px;
+
 }
+
 
 @keyframes pulse {
     0% {
@@ -127,7 +126,15 @@ header {
     }
 }
 
+
+.imagem-header {
+    width: 100%;
+    height: auto;
+    order: 2; /* Define a ordem do elemento */
+}
+
 /* Estilos da seção 'Sobre' */
+
 .sobre-texto {
     line-height: 1.2;
 }
@@ -136,7 +143,7 @@ header {
     text-align: center;
     background-color: var(--cor-terciaria);
     color: var(--cor-texto);
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 

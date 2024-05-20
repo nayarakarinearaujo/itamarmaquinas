@@ -3,81 +3,111 @@
 
 @media screen and (max-width: 640px) {
 
-    .navbar {
-        background: linear-gradient(to bottom, #333, #2f4f4f, #4f6a6a, #6a8181, #2f4f4f, #333);
-        /* Outros estilos conforme necessário */
-    }
-
     /* Estilos específicos para o menu toggle em telas menores */
     .navbar-header {
-        float: none; /* Limpar a propriedade float */
+        float: none;
+        /* Limpar a propriedade float */
     }
 
     .navbar-toggle {
-        display: block; /* Exibir o botão do menu toggle */
+        display: block;
+        /* Exibir o botão do menu toggle */
     }
 
     .navbar-menu {
-        display: none; /* Ocultar o menu */
+        display: none;
+        /* Ocultar o menu */
     }
 
     .navbar-menu.active {
-        display: block; /* Exibir o menu quando o botão do menu toggle é clicado */
+        display: block;
+        /* Exibir o menu quando o botão do menu toggle é clicado */
+        font-size: 18px;
     }
 
-    header {
-        background: linear-gradient(to bottom, #333, #2f4f4f, #4f6a6a, #6a8181, #2f4f4f, #333);
+    header img {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+
     }
 
     .nome-empresa {
-        background-color: rgba(0, 0, 0, 0.7); /* Adicionar fundo transparente */
+        background-color: rgba(0, 0, 0, 0.7);
+        /* Adicionar fundo transparente */
+        font-size: 18px;
+        margin-left: 15px;
+        /* Adicione uma margem à esquerda */
+        margin-right: 15px;
+        /* Certifique-se de manter a margem à direita */
+
     }
 
     .navbar-menu ul li {
-        margin-left: 0; /* Ajustar a margem do item do menu */
+        margin-left: 0;
+        /* Ajustar a margem do item do menu */
     }
-    
+
     .container-conserto div {
         margin-left: auto;
         margin-right: auto;
-        width: 80%; /* Define a largura das divs para ocupar 80% da largura da tela */
-        float: none; /* Remove o float para centralizar as divs */
+        width: 80%;
+        float: none;
     }
 
     .imagem-brastemp,
     .imagem-microondas,
     .imagem-lavaeseca {
-        float: none; /* Remove o float para centralizar as imagens */
-        margin: 0 auto; /* Centraliza as imagens */
-        width: 100%; /* Faz as imagens ocuparem toda a largura da div pai */
+        float: none;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
 /* Estilos para telas de tamanho médio (entre 641px e 1007px) */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    
+
     .navbar {
         width: 100%;
         max-width: 1200px;
-        
+
     }
 
     .navbar-menu {
-        display: flex; /* Alterar para um layout flexível */
-        justify-content: flex-end; /* Alinhar os itens à direita */
+        display: flex;
+        /* Alterar para um layout flexível */
+        justify-content: flex-end;
+        /* Alinhar os itens à direita */
     }
 
     .navbar-menu ul {
-        display: flex; /* Alterar para um layout flexível */
-        list-style-type: none; /* Remover os marcadores de lista */
+        display: flex;
+        /* Alterar para um layout flexível */
+        list-style-type: none;
+        /* Remover os marcadores de lista */
     }
 
     .navbar-menu ul li {
-        margin-left: 20px; /* Adicionar margem entre os itens */
+        margin-left: 20px;
+        /* Adicionar margem entre os itens */
     }
 
     .navbar-toggle {
-        display: none; /* Ocultar o botão do menu hamburguer */
+        display: none;
+        /* Ocultar o botão do menu hamburguer */
+    }
+
+    /*
+    header img {
+        width: 80%;
+        max-width: 600px;
+        margin: 20px auto;
+    }*/
+
+    .nome-empresa {
+        font-size: 24px;
+        margin-top: 20px;
+        /* Ajuste a margem superior conforme necessário */
     }
 
     .container-conserto div {
@@ -105,36 +135,47 @@
     }
 }
 
- /* Estilos para telas grandes (largura maior ou igual a 1008px) */
+/* Estilos para telas grandes (largura maior ou igual a 1008px) */
 @media screen and (min-width: 1008px) {
     body {
-        margin: 0; /* Remover a margem padrão do body */
+        margin: 0;
+        /* Remover a margem padrão do body */
     }
 
     header {
         display: flex;
-        flex-direction: column; /* Alterar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens na direção da coluna */
-        width: 100vw; /* Definir largura total da tela */
-        background-color: #4d4d4d; /* Definir cor de fundo */
-        padding: 20px 0; /* Adicionar padding superior e inferior */
+        flex-direction: column;
+        /* Alterar a direção do flex para coluna */
+        align-items: center;
+        /* Centralizar os itens na direção da coluna */
+        width: 100vw;
+        /* Definir largura total da tela */
+        padding: 20px 0;
+        /* Adicionar padding superior e inferior */
     }
 
     .nome-empresa {
-        font-size: 24px;
-        margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+        font-size: 26px;
+        margin-top: 20px;
+        margin-left: 15px;
+        /* Adicione uma margem à esquerda */
+        margin-right: 15px;
+        /* Certifique-se de manter a margem à direita */
     }
 
     header img {
         width: 100%;
         max-width: 600px;
-        margin: 20px auto; /* Centralizar a imagem na direção da coluna */
+        margin: 20px auto;
     }
 
     .navbar {
-        width: 100vw; /* Definir largura total da tela */
-        padding: 20px 0; /* Adicionar padding superior e inferior */
-        margin: 0; /* Remover margem */
+        width: 100vw;
+        /* Definir largura total da tela */
+        padding: 20px 0;
+        /* Adicionar padding superior e inferior */
+        margin: 0;
+        /* Remover margem */
     }
 
     .navbar-menu {
@@ -167,10 +208,13 @@
     }
 
     #contato {
-        width: 100vw; /* Definir largura total da tela */
-        
-        padding: 20px 0; /* Adicionar padding superior e inferior */
-        margin: 0; /* Remover margem */
+        width: 100vw;
+        /* Definir largura total da tela */
+
+        padding: 20px 0;
+        /* Adicionar padding superior e inferior */
+        margin: 0;
+        /* Remover margem */
     }
 
     /* Aumenta o tamanho das letras */
@@ -182,4 +226,3 @@
         font-size: 1.8em;
     }
 }
-
