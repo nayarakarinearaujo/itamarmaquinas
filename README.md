@@ -1,4 +1,4 @@
-# ~~Itamar EletroHelp~~
+# Itamar EletroHelp
 
 Bem-vindo ao repositório do site Itamar EletroHelp! Este site foi desenvolvido para uma empresa especializada em conserto e vendas de eletrodomésticos, oferecendo serviços de alta qualidade e atendimento excepcional.
 
