@@ -103,16 +103,14 @@ header {
 
 
 .nome-empresa {
-    animation: pulse 1.5s infinite alternate;
     font-size: 36px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
-    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.616);
-    margin-right: 15px;
-
+    animation: pulse 1.5s infinite alternate;
 }
 
 
@@ -127,10 +125,12 @@ header {
 }
 
 
-.imagem-header {
+.header-image {
     width: 100%;
     height: auto;
-    order: 2; /* Define a ordem do elemento */
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 /* Estilos da seção 'Sobre' */
