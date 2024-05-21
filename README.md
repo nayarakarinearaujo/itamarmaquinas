@@ -15,12 +15,12 @@ Bem-vindo ao repositório do site Itamar EletroHelp! Este site foi desenvolvido 
 O site Itamar EletroHelp foi criado para fornecer informações sobre a empresa, seus serviços e produtos, além de permitir que os clientes entrem em contato para solicitar mais informações ou agendar serviços.
 
 ### Funcionalidades
-Menu de Navegação: Facilita a navegação entre as seções do site.
-Seção Sobre: Informações sobre a empresa e sua missão.
-Seção de Serviços: Descrição detalhada dos serviços oferecidos, incluindo higienização e conserto de eletrodomésticos.
-Seção de Benefícios: Lista dos principais benefícios oferecidos pela empresa.
-Seção de Contato: Formulário para que os clientes possam entrar em contato facilmente.
-Seção de Produtos em Destaque: Apresenta os produtos disponíveis para venda.
+* Menu de Navegação: Facilita a navegação entre as seções do site.
+* Seção Sobre: Informações sobre a empresa e sua missão.
+* Seção de Serviços: Descrição detalhada dos serviços oferecidos, incluindo higienização e conserto de eletrodomésticos.
+* Seção de Benefícios: Lista dos principais benefícios oferecidos pela empresa.
+* Seção de Contato: Formulário para que os clientes possam entrar em contato facilmente.
+* Seção de Produtos em Destaque: Apresenta os produtos disponíveis para venda.
 
 ## Tecnologias Utilizadas
 - **HTML5**: Estrutura do site.
