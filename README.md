@@ -8,8 +8,7 @@ Bem-vindo ao repositório do site Itamar EletroHelp! Este site foi desenvolvido 
 3. [Estrutura do Projeto](#estrutura-do-projeto)
 4. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 5. [Como Executar o Projeto](#como-executar-o-projeto)
-6. [Contribuição](#contribuição)
-7. [Contato](#contato)
+6. [Autor](#autor)
 
 ### Visão Geral
 O site Itamar EletroHelp foi criado para fornecer informações sobre a empresa, seus serviços e produtos, além de permitir que os clientes entrem em contato para solicitar mais informações ou agendar serviços.
@@ -33,4 +32,15 @@ O site Itamar EletroHelp foi criado para fornecer informações sobre a empresa,
 
 ![Logo JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+## Como Executar o projeto
 
+Link do projeto:[Demo](itamar-eletrohelp.vercel.app/)
+
+
+## Autor
+Desenvolvido por Nayara Karine.
+
+---
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-24292e?logo=github)](https://github.com/nayarakarinearaujo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0e76a8?logo=linkedin)](https://www.linkedin.com/in/nayarakarine-araujo)
