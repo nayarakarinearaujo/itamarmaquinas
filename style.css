@@ -29,7 +29,6 @@ body {
     left: 0;
     z-index: 1000;
     height: 60px;
-    /* Ajuste a altura conforme sua preferência */
 }
 
 .navbar-header {
@@ -146,13 +145,9 @@ main {
 
 .container {
     padding: 20px;
-    /* Espaçamento interno */
     background-color: rgba(255, 255, 255, 0.9);
-    /* Fundo leve para contraste */
     border-radius: 8px;
-    /* Bordas arredondadas */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra para destaque */
 }
 
 /* Estilos da seção 'Sobre' */
@@ -177,21 +172,20 @@ main {
     position: relative;
 }
 
-.container-limpeza p{
+.container-limpeza p {
     font-size: 1.2rem;
-    padding-left: 0; 
-
-    text-align: left; 
-
+    padding-left: 0;
+    text-align: left;
 }
+
 .container-limpeza ul {
     padding-left: 0;
-    text-align: left; 
+    text-align: left;
 }
 
 .container-limpeza ul li {
-    list-style: none; 
-    text-align: left; 
+    list-style: none;
+    text-align: left;
     margin-bottom: 10px;/
 }
 
@@ -199,13 +193,12 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 20px; /* Ajuste o valor conforme necessário */
+    padding: 20px;
 
 }
 
 .higienizacao p {
-    padding-left: 20px; /* Ajuste o valor conforme necessário */
-
+    padding-left: 20px;
     text-align: center;
     flex: 1;
     font-size: 20px;
@@ -307,15 +300,15 @@ main {
 
 .container-maquina-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.container-maquina-content > div {
+.container-maquina-content>div {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-maquina p {
@@ -327,10 +320,8 @@ main {
 
 
 /* Estilos para o título "Nossos Produtos em Destaque" */
-.serviços-container-vendas h2,
-.servicos-subtitulo {
-    color: var(--cor-extremidade);
-    background-color: var(--cor-texto);
+.serviços-container-vendas h2{
+    color: var(--cor-subtitulo);
     padding: 20px;
     text-align: center;
     margin-top: 40px;
@@ -352,6 +343,8 @@ h3 {
 }
 
 .container-limpeza p {
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -434,16 +427,41 @@ h3 {
 }
 
 /*Container vendas*/
-
-.serviços-container-vendas h2,
-p {
+.serviços-container-vendas {
+    width: 100%;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.serviços-container-vendas div {
+    margin-bottom: 30px;
+}
+
+.serviços-container-vendas ul {
+    padding-left: 0;
+    margin-bottom: 20px;
 }
 
 .serviços-container-vendas ul li {
-    list-style: none;
+    text-align: left;
+    list-style-type: none;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 4px solid var(--cor-secundaria);
 }
 
+.serviços-container-vendas ul li strong {
+    color: var(--cor-subtitulo);
+}
+
+.serviços-container-vendas p {
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
 
 /*Container Contato*/
 
@@ -462,13 +480,9 @@ p {
 .contato-container {
     background-color: var(--cor-terciaria);
     width: 50%;
-    /* Ajuste para a largura desejada */
     max-width: 600px;
-    /* Limite máximo, se necessário */
     margin: 0 auto;
-    /* Centraliza o contêiner */
     padding: 20px;
-    /* Adiciona algum espaçamento interno */
 }
 
 #titulo {
@@ -538,37 +552,39 @@ p {
 
 /*Footer*/
 
-.footer {
-    text-align: center;
+footer {
     width: 100%;
     background-color: var(--cor-extremidade);
     color: var(--cor-texto);
     font-size: 14px;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-
-.rodape {
-    text-align: center;
-    width: 100%;
-    background-color: var(--cor-extremidade);
-    color: var(--cor-texto);
-    font-size: 14px;
-    padding: 5px 0px;
-}
-
-.rodape div,
-p {
-    text-align: center;
-}
-
-.rodape a {
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-}
-
-.rodape div img {
-    margin-bottom: -10px;
+footer .icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
