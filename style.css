@@ -83,21 +83,25 @@ body {
     font-weight: bold;
 }
 
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
 /*Header*/
 
-header {
-    width: 100%;
-    text-align: center;
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(to right, #333, #f0f0f0); /* Gradiente da esquerda para a direita começando com #333 */
-    margin: 0;
-    padding: 50px 0; /* Reduzindo o preenchimento superior para 50px */
-    margin-left: 0;
-    margin-right: 0;
+.header {
+    height: 400px;
+    width: 100%px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header#header-img {
+    background-image: url('imagens/maquinaHeader.webp');
+    background-position: right center;
     
 }
 
@@ -124,14 +128,14 @@ header {
     }
 }
 
-
+/* 
 .header-image {
     width: 100%;
     height: auto;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 8px;
-}
+} */
 
 /* Estilos da seção 'Sobre' */
 
