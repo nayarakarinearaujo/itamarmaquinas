@@ -114,7 +114,7 @@ body {
     background-position: right center;
 }
 
-.nome-empresa {
+.header h1 {
     font-size: 36px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
@@ -137,13 +137,23 @@ body {
 }
 
 main {
-    margin-top: 60px; /* Ajuste conforme a altura do navbar */
-    padding: 20px; /* Adiciona um espaçamento interno */
-    max-width: 1200px; /* Definindo uma largura máxima para centralizar */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
+    margin-top: 60px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.container {
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fundo leve para contraste */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para destaque */
+}
 
 /* Estilos da seção 'Sobre' */
 
@@ -162,17 +172,13 @@ main {
 /*Conaitner serviços*/
 
 .container {
-    padding: 20px; /* Espaçamento interno */
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo leve para contraste */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    margin: 0 auto;
+    overflow-x: hidden;
+    position: relative;
 }
 
-
-.container-limpeza li,
-.serviços-container-vendas li {
-    text-align: left;
-    padding-left: 20px;
+.container-limpeza li{
+    
 }
 
 ul {
@@ -211,11 +217,11 @@ ul li {
     text-align: left;
 }
 
-.subtitulo-limpeza-profunda {
+.container-limpeza-profunda h3 {
     color: var(--cor-texto);
     background-color: var(--cor-subtitulo);
     text-align: center;
-
+    font-size: 1.5rem;
 }
 
 .higienizacao p {
@@ -225,7 +231,7 @@ ul li {
 }
 
 .limpeza-profunda-texto {
-    line-height: 1.2;
+    line-height: 1.3;
     font-size: 18px;
 }
 
@@ -281,13 +287,34 @@ ul li {
 }
 
 
-.container-maquina p,
-.container-lavaeseca p,
-.container-microondas p {
-    font-size: 16px;
+
+.container-lavaeseca p {
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: left;
+    margin-right: 15px;
+    margin-left: -20px;
 
+}
+
+.container-maquina-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.container-maquina-content > div {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container-maquina p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-left: -50px;
 }
 
 
@@ -322,10 +349,6 @@ h3 {
 
 /*Container Micro-ondas*/
 
-.container-microondas {
-    margin-bottom: 40px;
-}
-
 .servicos-subtitulo-microondas {
     background-color: var(--cor-subtitulo);
     color: var(--cor-texto);
@@ -339,6 +362,12 @@ h3 {
     list-style-position: inside;
 }
 
+.container-microondas p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: -10px;
+}
 
 /*Imagens*/
 
@@ -403,6 +432,10 @@ p {
     padding: 20px;
 }
 
+.serviços-container-vendas ul li {
+    list-style: none;
+}
+
 
 /*Container Contato*/
 
@@ -416,6 +449,18 @@ p {
     transition: background-color 0.5s ease;
     margin: 0;
     position: relative;
+}
+
+.contato-container {
+    background-color: var(--cor-terciaria);
+    width: 50%;
+    /* Ajuste para a largura desejada */
+    max-width: 600px;
+    /* Limite máximo, se necessário */
+    margin: 0 auto;
+    /* Centraliza o contêiner */
+    padding: 20px;
+    /* Adiciona algum espaçamento interno */
 }
 
 #titulo {
