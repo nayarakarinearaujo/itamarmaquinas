@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (contatoForm) {
         contatoForm.classList.add('separado-titulo');
-        
+
         class FormHandler {
             constructor() {
                 this.phoneNumber = "5519988934901"; // Número de telefone para o qual enviar a mensagem
@@ -47,3 +47,24 @@ document.addEventListener('DOMContentLoaded', function () {
         new FormHandler();
     }
 });
+
+function initScrollSuave() {
+    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+    function scrollToSection(event) {
+        event.preventDefault();
+        const href = event.currentTarget.getAttribute("href");
+        const section = document.querySelector(href);
+
+        section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
+
+    linksInternos.forEach((link) => {
+        link.addEventListener("click", scrollToSection);
+    })
+}
+
+initScrollSuave();
