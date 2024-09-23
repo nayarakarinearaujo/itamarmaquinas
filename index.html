@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsivo.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <title>Itamar EletroHelp</title>
 </head>
 
 <body>
     <nav class="navbar js-menu">
         <div class="container-navbar">
+            <!-- <button type="button" class="navbar-toggle" id="menu-toggle">
+                <img src="imagens/cardapio (2).png" alt="Menu">
+            </button> -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" id="menu-toggle">
-                    <img src="imagens/cardapio (2).png" alt="Menu">
-                </button>
+                <button class="menu-btn navbar-toggle"><i class="fas fa-bars"></i></button>
             </div>
             <div class="navbar-menu" id="navbar-menu">
                 <ul>
@@ -33,7 +37,6 @@
     <header class="header" id="header-img">
         <h1>ITAMAR ELETROHELP</h1>
 
-        <!-- <img src="imagens/maquinabrastemp-fot-painel.webp" alt="Eletrodomésticos"> -->
     </header>
 
     <main>
@@ -83,10 +86,12 @@
                                 roupas, danificando-as;</li>
                         </ul>
                         <div class="higienizacao">
-                            <p>Para manter sua máquina em bom estado, limpe-a regularmente conforme as instruções do
-                                fabricante, e
-                                deixe-a secar após cada uso, mantendo a porta aberta.
-                            </p>
+                            <div class="higienizacao-container-paragrafo">
+                                <p>Para manter sua máquina em bom estado, limpe-a regularmente conforme as instruções do
+                                    fabricante, e
+                                    deixe-a secar após cada uso, mantendo a porta aberta.
+                                </p>
+                            </div>
                             <img class="imagem-higienizacao" src="imagens/higienizaçãodemaquina.webp"
                                 alt="Higienização de máquina de lavar">
                         </div>
@@ -204,9 +209,11 @@
                             que combinam lavagem e secagem em um único aparelho.</li>
                         <li><strong>Micro-ondas:</strong> Explore nossa seleção de micro-ondas, perfeitos para preparar
                             refeições rapidamente e com praticidade.</li>
-                    </ul>
-                    <p>Para mais informações sobre modelos disponíveis e promoções vigentes, entre em contato conosco.
-                    </p>
+                    <strong>
+                        </ul>
+                        <p>Para mais informações sobre modelos disponíveis e promoções vigentes, entre em contato conosco.
+                        </p>
+                    </strong>
                 </div>
             </div>
         </div>
@@ -229,18 +236,21 @@
 
     <footer class="rodape">
         <div>
-            <p><a href="https://wa.me/5519988934901" target="_blank" rel="external">
-                    <img src="imagens/whatsapp (1).png" alt="WhatsApp">
+            <p>
+                <a href="https://wa.me/5519988934901" target="_blank" rel="external">
+                    <img class="icone" src="imagens/whatsapp (1).png" alt="WhatsApp">
                     Telefone: (019) 98893-4901 / (019) 98865-9385
                 </a>
             </p>
-
+    
             <p>
-                <img src="imagens/o-email.png" alt="E-mail">E-mail: itamardmanutencao@gmail.com
+                <img class="icone" src="imagens/o-email.png" alt="E-mail">
+                E-mail: itamardmanutencao@gmail.com
             </p>
             <p>&copy; 2024 Itamar EletroHelp - Técnico em Eletrodomésticos</p>
         </div>
     </footer>
+    
 
     <script src="main.js"></script>
 

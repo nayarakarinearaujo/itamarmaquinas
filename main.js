@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navbarMenu = document.getElementById('navbar-menu');
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('.navbar-menu');
 
     // Função para alternar a visibilidade do menu quando o botão do hambúrguer é clicado
-    menuToggle.addEventListener('click', function () {
+    navbarToggle.addEventListener('click', function () {
         navbarMenu.classList.toggle('active');
     });
 
@@ -46,10 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
         // Inicializa o manipulador do formulário
         new FormHandler();
     }
+
+    // Inicializa o scroll suave e fecha o menu
+    initScrollSuave();
 });
 
 function initScrollSuave() {
     const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+    const navbarMenu = document.querySelector('.navbar-menu');
 
     function scrollToSection(event) {
         event.preventDefault();
@@ -60,11 +64,12 @@ function initScrollSuave() {
             behavior: "smooth",
             block: "start",
         });
+
+        // Fecha o menu ao clicar em um link
+        navbarMenu.classList.remove('active');
     }
 
     linksInternos.forEach((link) => {
         link.addEventListener("click", scrollToSection);
-    })
+    });
 }
-
-initScrollSuave();
