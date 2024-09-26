@@ -30,8 +30,7 @@
         background-repeat: no-repeat; 
         background-size: contain; 
         background-position: top; 
-        height: 150px; 
-
+        height: 150px;
     }
 
     .header h1 {
@@ -107,6 +106,14 @@
         display: none;
     }
 
+    
+    .header#header-img {
+        background-position: right center;
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-position: top; 
+        height: 200px;
+    }
    
 
     .nome-empresa {
