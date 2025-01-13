@@ -73,3 +73,6 @@ function initScrollSuave() {
         link.addEventListener("click", scrollToSection);
     });
 }
+
+const currentYear = document.getElementById("footerText");
+currentYear.innerHTML = `&copy; ${new Date().getFullYear()} Itamar Máquinas - Técnico em Eletrodomésticos`
